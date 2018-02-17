@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header'
 import Content from './Content'
 import Clock from './Clock'
+import Board from './Board'
 import './App.css';
 
 class App extends React.Component {
@@ -12,6 +13,9 @@ class App extends React.Component {
           <Header title="Timeline" />
           <Clock />
           <Content activities={activities} />
+          <div className="gameSpace">
+            <Board />
+          </div>
         </div>
       </div>
     )
